@@ -11,14 +11,15 @@ body {
 .cointaner {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     height: 100%;
     width: 100%;
+    background-color: rgb(108, 99, 109);
 }
 
 .card {
-    border: 1px solid black;
+    border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,47 +27,48 @@ body {
     gap: 20px;
     padding: 20px 0;
     border-radius: 15px;
+    width: 300px;
 }
 
 .imgBox {
-    width: 90%;
+    width: 50%;
+    height: 68px;
     border: 5px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    img {
-        width: 100%;
-
+    i{
+        font-weight: 400;
+        font-size: 60px;
     }
 }
 
 .textBox {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     width: 90%;
-    gap: 20px;
+    gap: 30px;
 }
 
-.textBox h3{
-    font-weight: 800;
+
+
+.textBox p {
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 10px ;
 }
 
 button {
-
-    width: 90%;
-    height: 40px;
-    background-color: orange;
+    width: 80%;
+    height: 50px;
     transition: 0.5s;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    background-color: black;
 }
 
-button:hover {
-    background-color: orangered;
-}
-
-button:active {
-    background-color: green;
-}
